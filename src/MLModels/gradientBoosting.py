@@ -195,5 +195,5 @@ if __name__ == "__main__":
         )
 
     print(
-        "\nGradient Boosting completed successfully."
+        "\nGradient Boosting completed Successfully."
     )
