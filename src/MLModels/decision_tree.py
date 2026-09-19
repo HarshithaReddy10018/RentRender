@@ -226,7 +226,7 @@ if __name__ == "__main__":
     print("\nR2 Score:")
     print(results["r2"])
 
-    print("\nFeature Importance:")
+    print("\nFeature_Importance:")
     print("-" * 40)
 
     for feature, importance in results[
