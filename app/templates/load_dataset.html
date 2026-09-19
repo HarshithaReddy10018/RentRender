@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>RentRender - Dataset</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        RentRender
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/">Home</a>
+
+        <a href="/dataset">
+            Dataset
+        </a>
+
+        <a href="/eda">
+            EDA
+        </a>
+
+    </div>
+
+</nav>
+
+
+<main class="page-container">
+
+    <div class="page-header">
+
+        <p class="tag">
+            DATASET MODULE
+        </p>
+
+        <h1>
+            Rental Property Dataset
+        </h1>
+
+        <p>
+            Explore the loaded apartment rental dataset.
+        </p>
+
+    </div>
+
+
+    <section class="summary-grid">
+
+        <div class="summary-card">
+
+            <h3>Rows</h3>
+
+            <div class="summary-value">
+                {{ summary["rows"] }}
+            </div>
+
+        </div>
+
+
+        <div class="summary-card">
+
+            <h3>Columns</h3>
+
+            <div class="summary-value">
+                {{ summary["columns"] }}
+            </div>
+
+        </div>
+
+
+        <div class="summary-card">
+
+            <h3>Dataset</h3>
+
+            <div class="summary-value">
+                10K
+            </div>
+
+            <p>
+                Rental Records
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="data-section">
+
+        <div class="section-heading">
+
+            <h2>
+                First 5 Rows
+            </h2>
+
+            <p>
+                Preview of the rental property dataset.
+            </p>
+
+        </div>
+
+
+        <div class="table-container">
+
+            {{ first_rows | safe }}
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 RentRender | Rental Property Analysis System
+    </p>
+
+</footer>
+
+</body>
+
+</html>

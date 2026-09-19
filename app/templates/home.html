@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RentRender - Home</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">RentRender</div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/dataset">Dataset</a>
+        <a href="/eda">EDA</a>
+    </div>
+</nav>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="tag">RENTAL PROPERTY ANALYSIS SYSTEM</p>
+
+        <h1>
+            Smart Rental Property
+            <span>Analysis</span>
+        </h1>
+
+        <p class="description">
+            RentRender is a machine learning based rental property
+            analysis system that helps explore, preprocess and analyze
+            apartment rental data.
+        </p>
+
+        <div class="buttons">
+
+            <a href="/dataset" class="btn primary">
+                Explore Dataset
+            </a>
+
+            <a href="/eda" class="btn secondary">
+                View EDA
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="features">
+
+    <h2>Project Modules</h2>
+
+    <p class="section-text">
+        Explore the major components of the RentRender project.
+    </p>
+
+
+    <div class="card-container">
+
+        <div class="card">
+
+            <div class="card-icon">📊</div>
+
+            <h3>Dataset</h3>
+
+            <p>
+                View the rental property dataset and understand
+                its structure, rows and columns.
+            </p>
+
+            <a href="/dataset">View Dataset →</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">📈</div>
+
+            <h3>EDA</h3>
+
+            <p>
+                Explore rental prices, bedrooms, bathrooms,
+                square feet and other important features.
+            </p>
+
+            <a href="/eda">View EDA →</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">⚙️</div>
+
+            <h3>Preprocessing</h3>
+
+            <p>
+                Prepare and clean rental data before applying
+                machine learning algorithms.
+            </p>
+
+            <a href="#">View Process →</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">🤖</div>
+
+            <h3>ML Models</h3>
+
+            <p>
+                Apply machine learning models to analyze
+                rental property data.
+            </p>
+
+            <a href="#">View Models →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>© 2026 RentRender | Rental Property Analysis System</p>
+
+</footer>
+
+</body>
+</html>

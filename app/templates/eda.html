@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>RentRender - EDA</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        RentRender
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/">Home</a>
+
+        <a href="/dataset">
+            Dataset
+        </a>
+
+        <a href="/eda">
+            EDA
+        </a>
+
+    </div>
+
+</nav>
+
+
+<main class="page-container">
+
+    <div class="page-header">
+
+        <p class="tag">
+            EXPLORATORY DATA ANALYSIS
+        </p>
+
+        <h1>
+            Rental Data Analysis
+        </h1>
+
+        <p>
+            Visual analysis of important rental property features.
+        </p>
+
+    </div>
+
+
+    <section class="chart-grid">
+
+
+        <div class="chart-card">
+
+            <h3>
+                Price Distribution
+            </h3>
+
+            <img
+                src="{{ url_for('static',
+                filename='charts/price_distrubution.png') }}"
+                alt="Price Distribution">
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <h3>
+                Bedrooms Distribution
+            </h3>
+
+            <img
+                src="{{ url_for('static',
+                filename='charts/bedrooms_distribution.png') }}"
+                alt="Bedrooms Distribution">
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <h3>
+                Bathrooms Distribution
+            </h3>
+
+            <img
+                src="{{ url_for('static',
+                filename='charts/bathrooms_distribution.png') }}"
+                alt="Bathrooms Distribution">
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <h3>
+                Square Feet Distribution
+            </h3>
+
+            <img
+                src="{{ url_for('static',
+                filename='charts/Square_feet_distribution.png') }}"
+                alt="Square Feet Distribution">
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <h3>
+                Price vs Square Feet
+            </h3>
+
+            <img
+                src="{{ url_for('static',
+                filename='charts/price_vs_square_feet_distribution.png') }}"
+                alt="Price vs Square Feet">
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <h3>
+                Rent Price vs Bedrooms
+            </h3>
+
+            <img
+                src="{{ url_for('static',
+                filename='charts/Rent_price_vs_bedrooms_distribution.png') }}"
+                alt="Rent Price vs Bedrooms">
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 RentRender | Rental Property Analysis System
+    </p>
+
+</footer>
+
+</body>
+
+</html>
