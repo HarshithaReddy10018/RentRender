@@ -181,7 +181,7 @@ if __name__ == "__main__":
     print("\nIntercept:")
     print(results["intercept"])
 
-    print("\nCoefficients:")
+    print("\nCoefficients: ")
 
     for feature, value in results["coefficients"].items():
         print(
