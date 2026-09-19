@@ -108,7 +108,7 @@ def run_kmeans():
         index=False
     )
 
-    print("\nClustered data saved to:")
+    print("\nClustered data Saved to:")
     print(output_path)
 
     return data, model
